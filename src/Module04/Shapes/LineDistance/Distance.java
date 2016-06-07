@@ -1,7 +1,7 @@
 package Module04.Shapes.LineDistance;
 
 
-public class Distance {
+public class Distance extends Main {
     double getDistance(PointOne a){
         double y1 = 5;
         double x1 = 7;

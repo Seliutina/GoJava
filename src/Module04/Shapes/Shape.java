@@ -1,10 +1,5 @@
 package Module04.Shapes;
 
-
-import java.awt.*;
-
-public interface Shapes {
-
+public interface Shape {
     public abstract double calculateArea();
-
 }

@@ -1,24 +1,31 @@
 package Module04.Shapes;
 
-public class Triangle implements Shapes {
-    int a, b, c;
 
-    public static double count (int a, int b)
-    {
-        double Area = (a*b)/2;
-        return Area;
+public class Triangle extends ShapeCalculator{
+    protected double side1;
+    protected double side2;
+
+
+    public void setSide2(double side2) {
+        this.side2 = side2;
     }
 
-    boolean existence()
-    {
-        boolean ex = true;
-        if((a+b)<c && (a+c)<b && (b+c)<a)
-            ex = false;
-        return ex;
+
+    
+    public double getSide1() {
+        return side1;
+    }
+
+    public void setSide1(double side1) {
+        this.side1 = side1;
+    }
+
+    public double getSide2() {
+        return side2;
     }
 
     @Override
-    public double count() {
-        return 60;
+    public double calculateArea() {
+        return side1*side2/2;
     }
 }

@@ -1,15 +1,19 @@
 package Module04.Shapes.Temperature;
 
-public class Celcius {
-    public static double FahrenheitToCelcius (double Fahrenheit){
-        double Celcius = 0.0;
-        Celcius = (Fahrenheit - 32) / 1.8;
-        return Celcius;
-    }
+import java.util.Scanner;
 
-    public static double CelciusToFahrenheit (double Celcius){
-        double Fahrenheit = 0.0;
-        Fahrenheit = Celcius * 1.8 + 32;
-        return Fahrenheit;
+public class Celcius {
+    public static void main(String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, enter Fahrenheit degree");
+        double Fahrenheit = scanner.nextDouble();
+        double Celcius = (Fahrenheit - 32) / 1.8;
+        System.out.println("Celcius degree equals " + Celcius);
+
+        System.out.println("Please, enter Celcius degree");
+        double Celcius1 = scanner.nextDouble();
+        double Fahrenheit1 = Celcius1 * 1.8 + 32;
+        System.out.println("Fahrenheit degree equals " + Fahrenheit1);
+
     }
 }

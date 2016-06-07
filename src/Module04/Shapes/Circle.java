@@ -1,15 +1,21 @@
 package Module04.Shapes;
 
-public class Circle implements Shapes {
-    int r;
 
-    public static double count(int r) {
-        double Area = Math.PI*r*r;
-        return Area;
+public class Circle extends ShapeCalculator{
+    public static final double PI = 3.14;
+    protected double r;
+
+    protected double getR() {
+        return r;
     }
 
+    public void setR(double r) {
+        this.r = r;
+    }
+
+
     @Override
-    public double count() {
-        return 1257;
+    public double calculateArea() {
+        return PI*r*r;
     }
 }

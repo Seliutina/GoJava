@@ -1,15 +1,33 @@
 package Module04.Shapes;
 
-public class Rectangle implements Shapes {
-    int a, b;
 
-    public static double count(int a, int b) {
-        double Area = a * b;
-        return Area;
+public class Rectangle extends ShapeCalculator {
+    protected double side11;
+    protected double side22;
+
+
+    public double getSide11() {
+        return side11;
     }
+
+    public void setSide11(double side11) {
+        this.side11 = side11;
+    }
+
+
+
+    public double getSide22() {
+        return side22;
+    }
+
+    public void setSide22(double side22) {
+        this.side22 = side22;
+    }
+
 
     @Override
-    public double count() {
-        return 120;
+    public double calculateArea() {
+        return side11*side22;
     }
 }
+
