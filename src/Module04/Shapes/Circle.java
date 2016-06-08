@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Circle {
+public class Circle implements Shape {
     public static final double PI = 3.14;
     protected double r;
 
