@@ -26,7 +26,7 @@ public class Rectangle extends ShapeCalculator {
 
 
     @Override
-    public double calculateArea() {
+    public double Area() {
         return side11*side22;
     }
 }

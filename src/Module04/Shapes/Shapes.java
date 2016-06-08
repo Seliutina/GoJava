@@ -5,6 +5,6 @@ import java.awt.*;
 
 public interface Shapes {
 
-    public abstract double calculateArea();
+    public double Area();
 
 }

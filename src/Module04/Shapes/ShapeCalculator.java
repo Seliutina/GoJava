@@ -2,25 +2,25 @@ package Module04.Shapes;
 
 
 public abstract class ShapeCalculator implements Shapes {
-    public double calculateArea;
+    public double Area;
 
-    public void setCalculateArea(double calculateArea) {
+    public void setArea(double Area) {
     }
 
-    public double getCalculateArea() {
-        return calculateArea();
+    public double Area() {
+        return Area();
     }
 
 
     public static void main(String[] args) {
-       Shape circle = (Shape) new Circle();
-        System.out.println(circle.calculateArea());
+       Circle circle = new Circle();
+        System.out.println(circle.Area());
 
-        Shape rectangle =(Shape) new Rectangle();
-        System.out.println(rectangle.calculateArea());
+        Rectangle rectangle = new Rectangle();
+        System.out.println(rectangle.Area());
 
-        Shape triangle = (Shape) new Triangle();
-        System.out.println(triangle.calculateArea());
+       Triangle triangle = new Triangle();
+        System.out.println(triangle.Area());
 
     }
 }

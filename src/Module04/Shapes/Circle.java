@@ -15,7 +15,7 @@ public class Circle extends ShapeCalculator{
 
 
     @Override
-    public double calculateArea() {
+    public double Area() {
         return PI*r*r;
     }
 }

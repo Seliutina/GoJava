@@ -25,7 +25,7 @@ public class Triangle extends ShapeCalculator{
     }
 
     @Override
-    public double calculateArea() {
+    public double Area() {
         return side1*side2/2;
     }
 }
