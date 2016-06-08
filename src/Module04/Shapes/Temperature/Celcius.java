@@ -2,7 +2,7 @@ package Module04.Shapes.Temperature;
 
 import java.util.Scanner;
 
-public class Celcius {
+public class celcius {
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter Fahrenheit degree");

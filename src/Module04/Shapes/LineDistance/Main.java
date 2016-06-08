@@ -3,9 +3,9 @@ package Module04.Shapes.LineDistance;
 
 import java.awt.*;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
-        PointOne a = new PointOne();
-        PointTwo b = new PointTwo();
+        pointOne a = new pointOne();
+        pointTwo b = new pointTwo();
     }
 }

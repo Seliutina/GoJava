@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Triangle implements Shape {
+public class triangle implements shape {
     protected double side1;
     protected double side2;
 

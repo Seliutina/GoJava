@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Rectangle implements Shape {
+public class rectangle implements shape {
     protected double side11;
     protected double side22;
 

@@ -1,7 +1,7 @@
 package Module04.Shapes.LineDistance;
 
 
-public class PointOne {
+public class pointOne {
     double x1;
     double y1;
 

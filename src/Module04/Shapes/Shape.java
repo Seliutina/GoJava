@@ -2,7 +2,7 @@ package Module04.Shapes;
 
 
 
-public interface Shape {
+public interface shape {
 
     public double calculateArea();
 
