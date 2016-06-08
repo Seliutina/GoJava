@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Rectangle extends ShapeCalculator {
+public class Rectangle {
     protected double side11;
     protected double side22;
 
@@ -25,8 +25,8 @@ public class Rectangle extends ShapeCalculator {
     }
 
 
-    @Override
-    public double Area() {
+   public double calculateArea()
+   {
         return side11*side22;
     }
 }

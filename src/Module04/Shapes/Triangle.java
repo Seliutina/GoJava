@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Triangle extends ShapeCalculator{
+public class Triangle {
     protected double side1;
     protected double side2;
 
@@ -24,8 +24,7 @@ public class Triangle extends ShapeCalculator{
         return side2;
     }
 
-    @Override
-    public double Area() {
+    public double calculateArea() {
         return side1*side2/2;
     }
 }

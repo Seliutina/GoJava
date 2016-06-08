@@ -1,7 +1,7 @@
 package Module04.Shapes;
 
 
-public class Circle extends ShapeCalculator{
+public class Circle {
     public static final double PI = 3.14;
     protected double r;
 
@@ -14,8 +14,7 @@ public class Circle extends ShapeCalculator{
     }
 
 
-    @Override
-    public double Area() {
+    public double calculateArea() {
         return PI*r*r;
     }
 }
