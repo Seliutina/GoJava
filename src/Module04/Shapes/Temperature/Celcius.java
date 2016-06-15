@@ -1,19 +1,29 @@
 package Module04.Shapes.Temperature;
 
+
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class celcius {
+public class celcius implements temperature {
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter Fahrenheit degree");
-        double Fahrenheit = scanner.nextDouble();
-        double Celcius = (Fahrenheit - 32) / 1.8;
-        System.out.println("Celcius degree equals " + Celcius);
 
-        System.out.println("Please, enter Celcius degree");
-        double Celcius1 = scanner.nextDouble();
-        double Fahrenheit1 = Celcius1 * 1.8 + 32;
-        System.out.println("Fahrenheit degree equals " + Fahrenheit1);
+        try {
+            final double fahrenheit = scanner.nextDouble();
+            double convertTemperature = (fahrenheit - 32)/1.8;
+            System.out.println("Celcius degree equals " + convertTemperature);
+        } catch (InputMismatchException ex) {
+            System.out.println("Please, type the number");
+        }
 
+    }
+
+    @Override
+    public double convertTemperature() {
+        final Scanner scanner = new Scanner(System.in);
+        double fahrenheit = scanner.nextDouble();
+        return (fahrenheit -32)/1.8;
     }
 }
