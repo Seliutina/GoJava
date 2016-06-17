@@ -1,8 +1,5 @@
 package Module04.Shapes.Temperature;
 
-
-
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class celcius implements temperature {
