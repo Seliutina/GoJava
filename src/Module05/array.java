@@ -10,7 +10,6 @@ public class array {
             System.out.println(x);
              x++;
         }
-
         System.out.println("Minimal element of array1 equals " + array1 [0]);
         System.out.println("Maximal element of array1 equals " + array1 [14]);
     }
