@@ -2,12 +2,12 @@ package Module04.Shapes.Temperature;
 
 import java.util.Scanner;
 
-public class celcius implements temperature {
+public class celsius implements temperature {
 
     @Override
     public double convertTemperature() {
         final Scanner scanner = new Scanner(System.in);
-        double fahrenheitToCelcius = scanner.nextDouble();
-            return (fahrenheitToCelcius - 32) / 1.8;
+        double fahrenheitToCelsius = scanner.nextDouble();
+            return (fahrenheitToCelsius - 32) / 1.8;
     }
 }

@@ -5,23 +5,23 @@ import java.util.InputMismatchException;
 
 public abstract class temperatureConverter {
     public static void main(String[] args) {
-        fahrenheit celciusToFahrenheit = new fahrenheit();
-        celcius fahrenheitToCelcius = new celcius();
+        fahrenheit celsiusToFahrenheit = new fahrenheit();
+        celsius fahrenheitToCelcius = new celsius();
 
-        for (; ; ) {
-            System.out.println("Please, enter Celcius temperature:");
+
+            System.out.println("Please, enter Celsius temperature:");
             try {
-                System.out.println("Fahrenheit temperature is " + celciusToFahrenheit.convertTemperature() + " Fahrenheit degrees");
+                System.out.println("Fahrenheit temperature is " + celsiusToFahrenheit.convertTemperature() + " Fahrenheit degrees");
             } catch (InputMismatchException ex) {
                 System.out.println("Please, enter Fahrenheit temperature in a number format");
             }
             System.out.println("Please, enter Fahrenheit temperature:");
             try {
-                System.out.println("Celcius temperature is " + fahrenheitToCelcius.convertTemperature() + " Celcius degrees");
+                System.out.println("Celsius temperature is " + fahrenheitToCelcius.convertTemperature() + " Celsius degrees");
 
             } catch (InputMismatchException ex) {
-                System.out.println("Please, type Celcius temperature in a number format");
+                System.out.println("Please, type Celsius temperature in a number format");
             }
-            }
+
         }
     }
