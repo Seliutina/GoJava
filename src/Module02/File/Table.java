@@ -10,6 +10,7 @@ public class Table {
         Files.add(new Audiofile("Audio", "Some lectures", 15));
         Files.add(new Imagefile("Image", "Some photos", 123));
 
+
         for (File f : Files) {
             System.out.println(f.getName() + " | " + f.getInstance() + " | " + f.getQuantity());
         }

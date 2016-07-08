@@ -1,7 +1,10 @@
 package Module02.File.Flowers;
 
-/**
- * Created by Irina on 30.05.2016.
- */
+
+import Module08.Flower;
+
 public class Rose extends Flower {
+    public Rose(String value) {
+        super(value);
+    }
 }
