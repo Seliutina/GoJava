@@ -12,6 +12,10 @@ public class Flower implements Comparable<Flower>{
         name=value;
     }
 
+    public Flower() {
+
+    }
+
     String getName(){return name;}
 
     @Override

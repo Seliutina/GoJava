@@ -5,6 +5,6 @@ import Module08.Flower;
 
 public class Daisy extends Flower {
     public Daisy(String value) {
-        super(value);
+        super();
     }
 }

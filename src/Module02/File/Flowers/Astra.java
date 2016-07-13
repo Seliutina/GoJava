@@ -5,6 +5,6 @@ import Module08.Flower;
 
 public class Astra extends Flower {
     public Astra(String value) {
-        super(value);
+        super();
     }
 }
