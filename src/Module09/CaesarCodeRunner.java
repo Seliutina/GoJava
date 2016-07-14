@@ -1,6 +1,8 @@
 package Module09;
 
-public class CaesarCodeRunner {
+import java.io.Serializable;
+
+public class CaesarCodeRunner implements Serializable {
 
     public static void main(String[] args) {
         String message ="public interface Map<K,V>\n" +
@@ -60,6 +62,8 @@ public class CaesarCodeRunner {
             }
         } return messageForDecoding.toString();
     }
-    }
+
+
+}
 
 
